@@ -42,6 +42,9 @@ app.get(['/.well-known/security.txt', '/security.txt'], (_req, res) =>
 app.get('/llms.txt', (_req, res) =>
   res.type('text/plain; charset=utf-8').sendFile(path.join(ROOT, 'llms.txt')));
 
+// public assets (images, etc.) — served from /assets so repo source stays private
+app.use('/assets', express.static(path.join(ROOT, 'assets'), { maxAge: '7d' }));
+
 // single-page site — everything else renders the page (repo source files stay private)
 app.get('*', (_req, res) => res.sendFile(path.join(ROOT, 'index.html')));
 
