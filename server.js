@@ -12,13 +12,13 @@ const ROOT = __dirname;
 
 const CSP = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.clarity.ms https://*.clarity.ms https://unpkg.com https://*.elevenlabs.io",
+  "script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' blob: https://www.clarity.ms https://*.clarity.ms https://unpkg.com https://*.elevenlabs.io",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com https://*.elevenlabs.io data:",
   "img-src 'self' data: https:",
-  "connect-src 'self' https://*.clarity.ms https://formspree.io https://*.elevenlabs.io wss://*.elevenlabs.io",
+  "connect-src 'self' blob: https://*.clarity.ms https://formspree.io https://*.elevenlabs.io wss://*.elevenlabs.io",
   "media-src 'self' blob: https://*.elevenlabs.io",
-  "worker-src 'self' blob:",
+  "worker-src 'self' blob: https://*.elevenlabs.io",
   "frame-src 'self' https://www.youtube.com https://player.vimeo.com https://*.elevenlabs.io",
   "frame-ancestors 'self'",
   "base-uri 'self'",
