@@ -1,0 +1,12 @@
+{
+  "name": "ws-bizcise",
+  "version": "1.0.0",
+  "private": true,
+  "description": "bizcise marketing site — static page served with proper security headers + well-known files",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
