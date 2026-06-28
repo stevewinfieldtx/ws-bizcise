@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company - Bizcise | Partner Ecosystem Intelligence Platform</title>
+    <meta name="description" content="Learn why bizcise exists - to bring clarity to partner-led go-to-market decisions. We help enterprise vendors see which partners actually drive revenue and where to focus investment.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bizcise.com/company">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bizcise.com/company">
+    <meta property="og:title" content="Company - Bizcise">
+    <meta property="og:description" content="bizcise was built to bring clarity to partner-led go-to-market decisions. Discover why we exist and our approach to partner ecosystem intelligence.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="Bizcise">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Company - Bizcise">
+    <meta name="twitter:description" content="Learn about bizcise and our mission to bring clarity to partner ecosystem decisions.">
+    
+    <link rel="icon" href="https://bizcise.com/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Bizcise",
+      "description": "Learn why bizcise exists and our approach to partner ecosystem intelligence.",
+      "url": "https://bizcise.com/company",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Bizcise",
+        "url": "https://bizcise.com",
+        "foundingDate": "2018",
+        "industry": "IT Consulting and Outsourcing",
+        "description": "AI-powered partner intelligence platform for enterprise GTM leaders.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "23860 NE 8th St",
+          "addressLocality": "Sammamish",
+          "addressRegion": "WA",
+          "postalCode": "98074",
+          "addressCountry": "US"
+        }
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --brand-primary: #2563eb;
+            --brand-primary-dark: #1d4ed8;
+            --brand-primary-light: #3b82f6;
+            --brand-secondary: #7c3aed;
+            --surface-dark: #0f172a;
+            --surface-mid: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: rgba(148, 163, 184, 0.1);
+            --gradient-brand: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 32px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--surface-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .logo-text {
+            background: var(--gradient-brand);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-cta {
+            background: var(--gradient-brand);
+            color: white !important;
+            padding: 10px 24px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        main {
+            padding: 80px 0;
+            min-height: calc(100vh - 200px);
+        }
+
+        /* Hero Section */
+        .page-hero {
+            text-align: center;
+            padding: 60px 0 80px;
+            position: relative;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            margin-top: 40px;
+            color: var(--text-primary);
+        }
+
+        .section-intro {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 900px;
+            margin-bottom: 48px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .content-block {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            backdrop-filter: blur(20px);
+        }
+
+        .content-block h3 {
+            margin-top: 0;
+        }
+
+        .content-block p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .content-block ul {
+            color: var(--text-secondary);
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        .content-block li {
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Clarity Loop Section */
+        .clarity-loop {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(124, 58, 237, 0.08) 100%);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            border-radius: var(--radius-xl);
+            padding: 60px;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .clarity-loop::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .clarity-loop h2 {
+            text-align: center;
+            margin-bottom: 48px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .loop-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .loop-step {
+            text-align: center;
+        }
+
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--surface-mid);
+            border: 3px solid var(--brand-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 36px;
+            color: var(--brand-primary-light);
+        }
+
+        .loop-step h3 {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .loop-step p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Problem/Solution Grid */
+        .problem-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin: 48px 0;
+        }
+
+        .problem-card, .solution-card {
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+        }
+
+        .problem-card {
+            background: rgba(239, 68, 68, 0.05);
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+
+        .solution-card {
+            background: rgba(34, 197, 94, 0.05);
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+
+        .problem-card h3, .solution-card h3 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .problem-card h3 {
+            color: #fca5a5;
+        }
+
+        .solution-card h3 {
+            color: #86efac;
+        }
+
+        .problem-card p, .solution-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .problem-card ul, .solution-card ul {
+            color: var(--text-secondary);
+            padding-left: 24px;
+            margin-top: 16px;
+        }
+
+        .problem-card li, .solution-card li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0 40px;
+            background: var(--surface-mid);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-top: 20px;
+            line-height: 1.7;
+            max-width: 320px;
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-col a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-bottom p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .nav-desktop {
+                display: none;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .problem-solution {
+                grid-template-columns: 1fr;
+            }
+
+            .loop-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .loop-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .clarity-loop {
+                padding: 40px 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 24px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="https://bizcise.com/" class="logo">
+                <i class="material-icons" style="font-size: 32px; color: var(--brand-primary);">insights</i>
+                <span class="logo-text">bizcise</span>
+            </a>
+
+            <nav class="nav-desktop" aria-label="Main navigation">
+                <ul>
+                    <li><a href="https://bizcise.com/market-intelligence">Market Intelligence</a></li>
+                    <li><a href="https://bizcise.com/market-activation">Market Activation</a></li>
+                    <li><a href="https://bizcise.com/company" style="color: var(--text-primary);">Company</a></li>
+                    <li><a href="https://bizcise.com/contact" class="nav-cta">Get Partner Clarity</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section id="hero" class="page-hero">
+                <h1>Why bizcise Exists</h1>
+                <p class="page-subtitle">bizcise was built to bring clarity to partner-led go-to-market decisions — so vendors can invest with confidence instead of guesswork.</p>
+            </section>
+
+            <!-- The Problem -->
+            <section id="problem" class="content-section">
+                <h2>The Problem</h2>
+                <p class="section-intro">Enterprise and mid-market vendors depend on partners to drive growth, yet most lack a clear view into which partners are actually driving revenue — and which are not.</p>
+                
+                <div class="content-block">
+                    <p>Partner ecosystems generate massive amounts of data, but very little clarity. Signals are fragmented across firmographic data, market activity, and partner behavior. Performance indicators lag reality, and competitive pressure inside partner ecosystems is often invisible.</p>
+                    <p style="margin-top: 24px; color: #fca5a5; font-weight: 600;">The result: high-stakes GTM and MDF decisions made with incomplete or misleading information.</p>
+                </div>
+            </section>
+
+            <!-- Why Bizcise -->
+            <section id="why-bizcise" class="content-section">
+                <h2>Why bizcise</h2>
+                <div class="content-block" style="border-color: rgba(37, 99, 235, 0.3); background: rgba(37, 99, 235, 0.05);">
+                    <p style="font-size: 18px; font-weight: 600; color: var(--brand-primary-light); margin-bottom: 16px;">The problem isn't data. It's clarity.</p>
+                    <p>Most channel, sales, and marketing teams don't need more dashboards or reports. They need a shared source of truth that shows which partners matter — and where to focus next.</p>
+                    <p>bizcise exists to turn fragmented partner and market signals into confident, defensible GTM decisions.</p>
+                </div>
+            </section>
+
+            <!-- What Bizcise Does -->
+            <section id="what-we-do" class="content-section">
+                <h2>What bizcise Does</h2>
+                <p class="section-intro">bizcise helps vendors clearly see which partners are actually driving sales and revenue of their solutions.</p>
+                
+                <div class="two-column">
+                    <div class="content-block">
+                        <h3>Unified Intelligence</h3>
+                        <p>By unifying otherwise disconnected firmographic, market, and engagement signals, bizcise reveals partner behavior, competitive pressure, and performance trends.</p>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h3>Strategic Clarity</h3>
+                        <p>Enabling teams to prioritize the right partners, focus investment where it matters, and stop funding activity that doesn't convert.</p>
+                    </div>
+                </div>
+                
+                <div class="content-block" style="margin-top: 32px;">
+                    <p style="font-style: italic; color: var(--text-muted);">bizcise doesn't manage partners or run campaigns. It provides the clarity that makes every partner decision smarter.</p>
+                </div>
+            </section>
+
+            <!-- The Clarity Loop -->
+            <section id="clarity-loop" class="content-section">
+                <div class="clarity-loop">
+                    <h2>The bizcise Clarity Loop</h2>
+                    <p class="section-intro" style="text-align: center; margin: -32px auto 48px;">bizcise operates as a continuous clarity system that improves partner ecosystem decisions over time.</p>
+                    
+                    <div class="loop-steps">
+                        <div class="loop-step">
+                            <div class="step-icon">
+                                <i class="material-icons">hub</i>
+                            </div>
+                            <h3>Ecosystem Intelligence</h3>
+                            <p>Aggregate and analyze signals from partner websites, market activity, and engagement data</p>
+                        </div>
+                        
+                        <div class="loop-step">
+                            <div class="step-icon">
+                                <i class="material-icons">analytics</i>
+                            </div>
+                            <h3>Performance Insight</h3>
+                            <p>Reveal which partners are actually driving revenue and which are not</p>
+                        </div>
+                        
+                        <div class="loop-step">
+                            <div class="step-icon">
+                                <i class="material-icons">search</i>
+                            </div>
+                            <h3>Partner Discovery</h3>
+                            <p>Identify high-value partners aligned to real market demand</p>
+                        </div>
+                        
+                        <div class="loop-step">
+                            <div class="step-icon">
+                                <i class="material-icons">trending_up</i>
+                            </div>
+                            <h3>Market Demand Signals</h3>
+                            <p>Connect clarity with GTM strategy and investment decisions</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Approach -->
+            <section id="approach" class="content-section">
+                <h2>The bizcise Approach</h2>
+                <p class="section-intro">This philosophy is reflected in the bizcise Clarity Loop — connecting partner intelligence, performance insight, discovery, and market demand signals to guide partner strategy and investment.</p>
+                
+                <div class="content-block">
+                    <p>The platform is trusted by organizations looking to reduce guesswork, improve partner focus, and make faster, more confident decisions.</p>
+                    <p>bizcise exists to help enterprise vendors invest in partners with confidence — based on clarity, not assumption.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="https://bizcise.com/" class="logo" style="font-size: 20px;">
+                        <i class="material-icons" style="font-size: 24px; color: var(--brand-primary);">insights</i>
+                        <span class="logo-text">bizcise</span>
+                    </a>
+                    <p>bizcise was built to bring clarity to partner-led go-to-market decisions. We help enterprise vendors see which partners actually drive revenue and where to focus investment.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="https://bizcise.com/market-intelligence">Market Intelligence</a></li>
+                        <li><a href="https://bizcise.com/market-activation">Market Activation</a></li>
+                        <li><a href="https://bizcise.com/company">About Company</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://bizcise.com/company">Why We Exist</a></li>
+                        <li><a href="https://bizcise.com/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="https://bizcise.com/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="https://bizcise.com/terms-of-service">Terms of Service</a></li>
+                        <li><a href="https://bizcise.com/policy">Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 bizcise. All rights reserved.</p>
+                <a href="https://www.linkedin.com/company/bizcise" style="color: var(--text-muted); text-decoration: none; font-size: 24px;">
+                    <i class="material-icons">business</i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html><!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company - Bizcise | Partner Ecosystem Intelligence Platform</title>
+    <meta name="description" content="Learn why bizcise exists - to bring clarity to partner-led go-to-market decisions. We help enterprise vendors see which partners actually drive revenue and where to focus investment.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bizcise.com/company">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bizcise.com/company">
+    <meta property="og:title" content="Company - Bizcise">
+    <meta property="og:description" content="bizcise was built to bring clarity to partner-led go-to-market decisions. Discover why we exist and our approach to partner ecosystem intelligence.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="Bizcise">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Company - Bizcise">
+    <meta name="twitter:description" content="Learn about bizcise and our mission to bring clarity to partner ecosystem decisions.">
+    
+    <link rel="icon" href="https://bizcise.com/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Bizcise",
+      "description": "Learn why bizcise exists and our approach to partner ecosystem intelligence.",
+      "url": "https://bizcise.com/company",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Bizcise",
+        "url": "https://bizcise.com",
+        "foundingDate": "2018",
+        "industry": "IT Consulting and Outsourcing",
+        "description": "AI-powered partner intelligence platform for enterprise GTM leaders.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "23860 NE 8th St",
+          "addressLocality": "Sammamish",
+          "addressRegion": "WA",
+          "postalCode": "98074",
+          "addressCountry": "US"
+        }
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --brand-primary: #2563eb;
+            --brand-primary-dark: #1d4ed8;
+            --brand-primary-light: #3b82f6;
+            --brand-secondary: #7c3aed;
+            --surface-dark: #0f172a;
+            --surface-mid: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: rgba(148, 163, 184, 0.1);
+            --gradient-brand: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 32px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--surface-dark);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .logo-text {
+            background: var(--gradient-brand);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-cta {
+            background: var(--gradient-brand);
+            color: white !important;
+            padding: 10px 24px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+        }
+
+        /* Main Content */
+        main {
+            padding: 80px 0;
+            min-height: calc(100vh - 200px);
+        }
+
+        /* Hero Section */
+        .page-hero {
+            text-align: center;
+            padding: 60px 0 80px;
+            position: relative;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            margin-top: 40px;
+            color: var(--text-primary);
+        }
+
+        .section-intro {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 900px;
+            margin-bottom: 48px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
+        }
+
+        .content-block {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            backdrop-filter: blur(20px);
+        }
+
+        .content-block h3 {
+            margin-top: 0;
+        }
+
+        .content-block p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .content-block ul {
+            color: var(--text-secondary);
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        .content-block li {
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Clarity Loop Section */
+        .clarity-loop {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.08) 0%, rgba(124, 58, 237, 0.08) 100%);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            border-radius: var(--radius-xl);
+            padding: 60px;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .clarity-loop::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .clarity-loop h2 {
+            text-align: center;
+            margin-bottom: 48px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .loop-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .loop-step {
+            text-align: center;
+        }
+
+        .step-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--surface-mid);
+            border: 3px solid var(--brand-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 36px;
+            color: var(--brand-primary-light);
+        }
+
+        .loop-step h3 {
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .loop-step p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Problem/Solution Grid */
+        .problem-solution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin: 48px 0;
+        }
+
+        .problem-card, .solution-card {
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+        }
+
+        .problem-card {
+            background: rgba(239, 68, 68, 0.05);
+            border-color: rgba(239, 68, 68, 0.2);
+        }
+
+        .solution-card {
+            background: rgba(34, 197, 94, 0.05);
+            border-color: rgba(34, 197, 94, 0.2);
+        }
+
+        .problem-card h3, .solution-card h3 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .problem-card h3 {
+            color: #fca5a5;
+        }
+
+        .solution-card h3 {
+            color: #86efac;
+        }
+
+        .problem-card p, .solution-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .problem-card ul, .solution-card ul {
+            color: var(--text-secondary);
+            padding-left: 24px;
+            margin-top: 16px;
+        }
+
+        .problem-card li, .solution-card li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0 40px;
+            background: var(--surface-mid);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-top: 20px;
+            line-height: 1.7;
+            max-width: 320px;
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-col a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-bottom p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .nav-desktop {
+                display: none;
+            }
+
+            h1 {
+                font-size: 42px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .problem-solution {
+                grid-template-columns: 1fr;
+            }
+
+            .loop-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .loop-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .clarity-loop {
+                padding: 40px 24px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 24px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="https://bizcise.com/" class="logo">
+                <i class="material-icons" style="font-size: 32px; color: var(--brand-primary);">insights</i>
+                <span class="logo-text">bizcise</span>
+            </a>
+
+            <nav class="nav-desktop" aria-label="Main navigation">
+                <ul>
+                    <li><a href="https://bizcise.com/market-intelligence">Market Intelligence</a></li>
+                    <li><a href="https://bizcise.com/market-activation">Market Activation</a></li>
+                    <li><a href="https://bizcise.com/company" style="color: var(--text-primary);">Company</a></li>
+                    <li><a href="https://bizcise.com/contact" class="nav-cta">Get Partner Clarity</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section id="hero" class="page-hero">
+                <h1>Why bizcise Exists</h1>
+                <p class="page-subtitle">bizcise was built to bring clarity to partner-led go-to-market decisions — so vendors can invest with confidence instead of guesswork.</p>
+            </section>
+
+            <!-- The Problem -->
+            <section id="problem" class="content-section">
+                <h2>The Problem</h2>
+                <p class="section-intro">Enterprise and mid-market vendors depend on partners to drive growth, yet most lack a clear view into which partners are actually driving revenue — and which are not.</p>
+                
+                <div class="content-block">
+                    <p>Partner ecosystems generate massive amounts of data, but very little clarity. Signals are fragmented across firmographic data, market activity, and partner behavior. Performance indicators lag reality, and competitive pressure inside partner ecosystems is often invisible.</p>
+                    <p style="margin-top: 24px; color: #fca5a5; font-weight: 600;">The result: high-stakes GTM and MDF decisions made with incomplete or misleading information.</p>
+                </div>
+            </section>
+
+            <!-- Why Bizcise -->
+            <section id="why-bizcise" class="content-section">
+                <h2>Why bizcise</h2>
+                <div class="content-block" style="border-color: rgba(37, 99, 235, 0.3); background: rgba(37, 99, 235, 0.05);">
+                    <p style="font-size: 18px; font-weight: 600; color: var(--brand-primary-light); margin-bottom: 16px;">The problem isn't data. It's clarity.</p>
+                    <p>Most channel, sales, and marketing teams don't need more dashboards or reports. They need a shared source of truth that shows which partners matter — and where to focus next.</p>
+                    <p>bizcise exists to turn fragmented partner and market signals into confident, defensible GTM decisions.</p>
+                </div>
+            </section>
+
+            <!-- What Bizcise Does -->
+            <section id="what-we-do" class="content-section">
+                <h2>What bizcise Does</h2>
+                <p class="section-intro">bizcise helps vendors clearly see which partners are actually driving sales and revenue of their solutions.</p>
+                
+                <div class="two-column">
+                    <div class="content-block">
+                        <h3>Unified Intelligence</h3>
+                        <p>By unifying otherwise disconnected firmographic, market, and engagement signals, bizcise reveals partner behavior, competitive pressure, and performance trends.</p>
+                    </div>
+                    
+                    <div class="content-block">
+                        <h3>Strategic Clarity</h3>
+                        <p>Enabling teams to prioritize the right partners, focus investment where it matters, and stop funding activity that doesn't convert.</p>
+                    </div>
+                </div>
+                
+                <div class="content-block" style="margin-top: 32px;">
+                    <p style="font-style: italic; color: var(--text-muted);">bizcise doesn't manage partners or run campaigns. It provides the clarity that makes every partner decision smarter.</p>
+                </div>
+            </section>
+
+            <!-- The Clarity Loop -->
+            <section id="clarity-loop" class="content-section">
+                <div class="clarity-loop">
+                    <h2>The bizcise Clarity Loop</h2>
+                    <p class="section-intro" style="text-align: center; margin: -32px auto 48px;">bizcise operates as a continuous clarity system that improves partner ecosystem decisions over time.</p>
+                    
+                    <div class="loop-steps">
+                        <div class="loop-step">
+                            <div class="step-icon">
+                                <i class="material-icons">hub</i>
+                            </div>
+                            <h3>Ecosystem Intelligence</h3>
+                            <p>Aggregate and analyze signals from partner websites, market activity, and engagement data</p>
+                        </div>
+                        
+                        <div class="loop-step">
+                            <div class="step-icon">
+                                <i class="material-icons">analytics</i>
+                            </div>
+                            <h3>Performance Insight</h3>
+                            <p>Reveal which partners are actually driving revenue and which are not</p>
+                        </div>
+                        
+                        <div class="loop-step">
+                            <div class="step-icon">
+                                <i class="material-icons">search</i>
+                            </div>
+                            <h3>Partner Discovery</h3>
+                            <p>Identify high-value partners aligned to real market demand</p>
+                        </div>
+                        
+                        <div class="loop-step">
+                            <div class="step-icon">
+                                <i class="material-icons">trending_up</i>
+                            </div>
+                            <h3>Market Demand Signals</h3>
+                            <p>Connect clarity with GTM strategy and investment decisions</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Approach -->
+            <section id="approach" class="content-section">
+                <h2>The bizcise Approach</h2>
+                <p class="section-intro">This philosophy is reflected in the bizcise Clarity Loop — connecting partner intelligence, performance insight, discovery, and market demand signals to guide partner strategy and investment.</p>
+                
+                <div class="content-block">
+                    <p>The platform is trusted by organizations looking to reduce guesswork, improve partner focus, and make faster, more confident decisions.</p>
+                    <p>bizcise exists to help enterprise vendors invest in partners with confidence — based on clarity, not assumption.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="https://bizcise.com/" class="logo" style="font-size: 20px;">
+                        <i class="material-icons" style="font-size: 24px; color: var(--brand-primary);">insights</i>
+                        <span class="logo-text">bizcise</span>
+                    </a>
+                    <p>bizcise was built to bring clarity to partner-led go-to-market decisions. We help enterprise vendors see which partners actually drive revenue and where to focus investment.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="https://bizcise.com/market-intelligence">Market Intelligence</a></li>
+                        <li><a href="https://bizcise.com/market-activation">Market Activation</a></li>
+                        <li><a href="https://bizcise.com/company">About Company</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://bizcise.com/company">Why We Exist</a></li>
+                        <li><a href="https://bizcise.com/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="https://bizcise.com/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="https://bizcise.com/terms-of-service">Terms of Service</a></li>
+                        <li><a href="https://bizcise.com/policy">Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 bizcise. All rights reserved.</p>
+                <a href="https://www.linkedin.com/company/bizcise" style="color: var(--text-muted); text-decoration: none; font-size: 24px;">
+                    <i class="material-icons">business</i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!--
+  OPTIONAL JSON-LD structured data for bizcise.
+
+  Claude CMS strips <script> tags at ingest, so JSON-LD cannot live inside the
+  CMS-managed template — that is why index.html uses schema.org MICRODATA
+  (itemscope/itemprop) instead, which survives ingest and is read by Google & AI engines.
+
+  If you ALSO want classic JSON-LD (e.g. you serve index.html directly, or you
+  inject it at the server layer AFTER the CMS render), paste the block below into
+  the <head> at the server level. Do NOT paste it into the CMS editor — it will be removed.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bizcise.com/#org",
+      "name": "bizcise",
+      "url": "https://bizcise.com/",
+      "logo": "https://bizcise.com/wp-content/uploads/2024/10/Logo-Inverted.svg",
+      "email": "info@bizcise.com",
+      "description": "bizcise turns fragmented partner and market signals into confident, defensible go-to-market decisions for partner-led vendors.",
+      "sameAs": ["https://www.linkedin.com/company/bizcise/"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bizcise.com/#website",
+      "url": "https://bizcise.com/",
+      "name": "bizcise",
+      "publisher": { "@id": "https://bizcise.com/#org" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is bizcise?", "acceptedAnswer": { "@type": "Answer", "text": "bizcise is partner ecosystem intelligence that brings clarity to partner-led go-to-market, consolidating partner intelligence, performance assessment, and market demand signals into a single clarity system." } },
+        { "@type": "Question", "name": "Who is bizcise for?", "acceptedAnswer": { "@type": "Answer", "text": "Vendors with large, complex partner ecosystems and meaningful GTM and MDF investment — VP/Director of Channel Programs, Channel Sales, Channel Marketing, and Data & Analytics teams supporting GTM." } },
+        { "@type": "Question", "name": "How is bizcise different from a PRM or enablement platform?", "acceptedAnswer": { "@type": "Answer", "text": "bizcise complements rather than replaces PRMs, enablement platforms, and intent tools. Those systems execute; bizcise decides where to focus." } },
+        { "@type": "Question", "name": "What is the bizcise Clarity Loop?", "acceptedAnswer": { "@type": "Answer", "text": "A continuous system connecting market demand signals, partner intelligence, prioritization, activation, and performance feedback, so clarity compounds with each cycle." } }
+      ]
+    }
+  ]
+}
+</script>
